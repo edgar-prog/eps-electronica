@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Raleway", sans-serif;
+    src: url(/fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: digital;
+    src: url(/fonts/digital-7.ttf);
+}
+
+:root {
+    --clr-main: #F2F4F4;
+    --close-color: #8b0000;
+    --selection-color: #333;
+    --bg-color-2: #161623;
+    --bg-color: #ABB2B9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    
+}

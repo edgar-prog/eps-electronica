@@ -1,0 +1,60 @@
+@media screen and (max-width: 768px) {
+    .logo {
+      padding-bottom: 1em;
+    }
+  
+    .sidebar_content {
+      padding: 1rem 0;
+    }
+  
+    li-element:last-child {
+      margin-top: 15%;
+    }
+  
+    .sidebar_toggler {
+      z-index: 2;
+      position: fixed;
+    }
+  
+    .control {
+      height: 50%;
+      width: 100%;
+      border-top: 0.2rem solid #000;
+    }
+  
+    .row.one {
+      column-gap: 10px;
+      padding-top: 5px;
+    }
+  
+    .item {
+      justify-content: space-around;
+      padding: 0px;
+    }
+  
+   .item div {
+      padding: 5px 10px;
+    }
+  
+    .item div span {
+      font-size: 0.70em;
+      font-weight: 700;
+    }
+  
+   .sub-item legend {
+      font-size: 0.85em;
+    }
+  
+    .sub-item .operation {
+      padding: 5px 0;
+    }
+  
+    .operation div {
+      padding: 0 5px;
+    }
+  
+    .operation div span {
+      padding: 0.25em;
+      font-size: 0.6em;
+    }
+  }

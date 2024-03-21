@@ -1,0 +1,73 @@
+@media screen and (max-width: 320px) {
+    #sidebar {
+      width: 25%;
+    }
+  
+    screen-element {
+      display: none;
+    }
+  
+    .sidebar_toggler {
+      z-index: 2;
+      position: fixed;
+    }
+  
+    .logo {
+      padding-bottom: 1em;
+    }
+  
+    .sidebar_content {
+      padding: 0.5rem 0;
+    }
+  
+    li-element:last-child {
+      margin-top: 50%;
+    }
+  
+    .control {
+      height: 100vh;
+    }
+  
+    .row.one {
+      column-gap: 10px;
+      padding-top: 20px;
+    }
+  
+    .item {
+      padding: 5px;
+    }
+  
+    
+    .item div {
+      flex-wrap: wrap;
+      padding: 5px;
+    }
+  
+    .item div span {
+      padding-bottom: 2px;
+      font-size: 0.5em;
+      font-weight: 700;
+    }
+   
+    .sub-item {
+      width: 100%;
+      margin-top: 5px;
+    }
+  
+    .sub-item legend {
+      font-size: 0.85em;
+    }
+  
+    .sub-item .operation {
+      padding: 5px 0;
+    }
+  
+    .operation div {
+      padding: 0 5px;
+    }
+  
+    .operation div span {
+      padding: 0.25em;
+      font-size: 0.6em;
+    }
+  }

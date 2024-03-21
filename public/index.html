@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>CENAME</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/control.css" />
+    <link rel="stylesheet" href="css/responsive760.css" />
+    <link rel="stylesheet" href="css/responsive425.css" />
+    <link rel="stylesheet" href="css/responsive320.css" />
+  </head>
+
+  <body>
+    <!--====== Sidebar ======-->
+    <aside id="sidebar">
+      <div class="sidebar_content sidebar_head">
+        <div class="logo">
+          <img src="img/cename-outline.png" />
+          <div class="texto">CENAME</div>
+        </div>
+      </div>
+
+      <div class="sidebar_content sidebar_body">
+        <nav class="side_navlinks">
+          <ul>
+            <li-element 
+              color="#B71C1C" 
+              src="img/desktop-outline.svg" 
+              size="35">
+              Test
+            </li-element>
+            <li-element 
+              color="#B71C1C" 
+              src="img/server-outline.svg"  
+              size="35">
+              Calculo
+            </li-element>
+            <li-element
+              id ="config-Out"
+              color="#B71C1C"
+              src="img/settings-outline.svg"
+              size="35">
+              Configuracion
+            </li-element>
+            <li-element 
+              id="CRUD-Out"
+              color="#B71C1C" 
+              src="img/person-outline.svg" 
+              size="35">
+              User
+            </li-element>
+            <li-element
+              id="login-Out"
+              color="#B71C1C"
+              src="img/log-out-outline.svg"
+              size="35">
+              Logout
+            </li-element>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!--== Sidebar-Toggler ==-->
+    <div class="sidebar_toggler">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <main id="main">
+      <screen-element src="img/sistema-outline.svg"></screen-element>
+      <div class="control">
+        <div class="row one">
+          <fieldset class="item">
+            <legend>DEPOSITOS</legend>
+            <div>
+              <span>10 LITROS</span>
+              <toogle-element id="LITROS10"></toogle-element>
+            </div>
+            <div>
+              <span>100 LITROS</span>
+              <toogle-element id="LITROS100"></toogle-element>
+            </div>
+          </fieldset>
+
+          <fieldset class="item">
+            <legend>LINEAS DE CONTADORES</legend>
+            <div>
+              <span>LINEA 1</span>
+              <toogle-element id="LINEA1"></toogle-element>
+            </div>
+            <div>
+              <span>LINEA 2</span>
+              <toogle-element id="LINEA2"></toogle-element>
+            </div>
+            <div>
+              <span>LINEA 1 y 2</span>
+              <toogle-element id="AMBAS"></toogle-element>
+            </div>
+          </fieldset>
+
+          <fieldset class="item">
+            <legend>OPCIONES</legend>
+            <div>
+              <span>BOMBA</span>
+              <toogle-element id="BOMBA"></toogle-element>
+            </div>
+            <div>
+              <span>TANQUE</span>
+              <toogle-element id="TANQUE"></toogle-element>
+            </div>
+          </fieldset>
+
+          <fieldset class="item">
+            <legend>TEST</legend>
+            <div>
+              <button-element
+                src="img/settings-outline.svg"
+                label="TEST"></button-element>
+            </div>
+          </fieldset>
+
+          <fieldset class="item">
+            <legend>TANQUE HIDRONEUMATICO</legend>
+            <div>
+              <button-element
+                src="img/settings-outline.svg"
+                label="LLENAR"></button-element>
+              <button-element
+                src="img/settings-outline.svg"
+                label="VACIAR"></button-element>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="row two">
+          <fieldset class="sub-item">
+            <legend>SELECCIONAR CAUDAL</legend>
+            <div class="operation">
+              <div>
+                <span class="button-span">1000 l/h - 7000 l/h</span>
+                <slider-element
+                  src="img/llave.svg"
+                  title="VR3"
+                  id="VR3"></slider-element>
+              </div>
+              <div>
+                <span>V7</span>
+                <toogle-element id="V7"></toogle-element>
+              </div>
+            </div>
+
+            <div class="operation">
+              <div>
+                <span class="button-span">100 l/h - 1000 l/h</span>
+                <slider-element
+                  src="img/llave.svg"
+                  title="VR2"
+                  id="VR2"></slider-element>
+              </div>
+              <div>
+                <span>V6</span>
+                <toogle-element id="V6"></toogle-element>
+              </div>
+            </div>
+
+            <div class="operation">
+              <div>
+                <span class="button-span">10 l/h - 100 l/h</span>
+                <slider-element
+                  src="img/llave.svg"
+                  title="VR1"
+                  id="VR1"></slider-element>
+              </div>
+              <div>
+                <span>V5</span>
+                <toogle-element id="V5"></toogle-element>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="sub-item">
+            <legend>OTRAS</legend>
+            <div class="operation">
+              <div>
+                <span class="button-span">PRESION BOMBA</span>
+                <slider-element
+                  src="img/llave.svg"
+                  title="V17"
+                  id="V17"></slider-element>
+              </div>
+            </div>
+
+            <div class="operation">
+              <div>
+                <span>V18</span>
+                <toogle-element id="V18"></toogle-element>            
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="sub-item">
+            <legend>PROCESOS</legend>
+
+            <div class="operation">
+              <button-element
+                src="img/settings-outline.svg"
+                label="PURGA"></button-element>
+              <button-element
+                src="img/settings-outline.svg"
+                label="AJUSTE"
+                press="true"></button-element>
+              <button-element
+                src="img/settings-outline.svg"
+                label="ENSAYO"
+                press="true"></button-element>
+            </div>
+          </fieldset>
+
+          <fieldset class="sub-item">
+            <legend>CONEXION</legend>
+
+            <div class="operation">
+              <div>
+                <span>MCU 1</span>
+                <light-element id="MCU"></light-element>
+              </div>
+              <div>
+                <span>MCU 2</span>
+                <light-element id="MCU"></light-element>
+              </div>
+              <div>
+                <span>MCU 3</span>
+                <light-element id="MCU"></light-element>
+              </div>
+              <div>
+                <span>MCU 4</span>
+                <light-element id="MCU"></light-element>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="sub-item">
+            <legend>SENSORES</legend>
+
+            <div class="operation">
+              <div>
+                <span>10 L</span>
+                <light-element id="sensor"></light-element>
+              </div>
+              <div>
+                <span>100 L</span>
+                <light-element id="sensor"></light-element>
+              </div>
+<!--               <div>
+                <span>LINEA 1</span>
+                <light-element id="sensor"></light-element>
+              </div>
+              <div>
+                <span>LINEA 2</span>
+                <light-element id="sensor"></light-element>
+              </div> -->
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </main>
+
+    <modal-login></modal-login>
+    <modal-register></modal-register>
+    <modal-config></modal-config>
+    <modal-alert
+      id="LAN-MCU"
+      message="MCU DESCONETADO"
+      icon="img/lanerror_outline.svg"
+      color="#DF3030"></modal-alert>
+    <modal-alert
+      id="server"
+      message="SERVIDOR DESCONETADO"
+      icon="img/dbserver-outline.svg"
+      color="#F7B80C"></modal-alert>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/components/li-ul.js"></script>
+    <script src="js/components/screen.js"></script>
+    <script src="js/components/valvule.js"></script>
+    <script src="js/components/toogle.js"></script>
+    <script src="js/components/slider.js"></script>
+    <script src="js/components/light.js"></script>
+    <script src="js/components/button.js"></script>
+    <script src="js/components/modal-alerts.js"></script>
+    <script src="js/components/modal-login.js"></script>
+    <script src="js/components/modal-register.js"></script>
+    <script src="js/components/modal-config.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

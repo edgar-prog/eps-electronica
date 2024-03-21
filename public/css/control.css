@@ -1,0 +1,133 @@
+
+#main {
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+screen-element {
+    flex: 1;
+    position: relative;
+    width: 70%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.control {
+    flex: 1;
+    width: 100%;
+    border-top: 0.2rem solid #000;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    z-index: 1;
+  }
+
+  .row.one {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 15px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .item legend {
+    font-size: 0.60em;
+    font-weight: 700;
+  }
+
+  .item div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+  }
+
+  .item div span {
+    font-size: 0.70em;
+    font-weight: 700;
+    padding: 5px;
+  }
+
+  .row.one .item:nth-child(1) {
+    width: 18%;
+  }
+
+  .row.one .item:nth-child(2) {
+    width: 18%;
+  }
+
+  .row.one .item:nth-child(3) {
+    width: 18%;
+  }
+
+  .row.one .item:nth-child(4) {
+    width: 10%;
+  }
+
+  .row.one .item:nth-child(5) {
+    width: 18%;
+  }
+
+  .row.two {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 1.3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sub-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sub-item legend {
+    font-size: 0.85em;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .sub-item .operation {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+    justify-content: space-around;
+  }
+
+  .operation div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5px;
+  }
+
+  .operation div span {
+    padding: 0.25em;
+    font-size: 0.6em;
+  }
+
+  .row.two .sub-item:nth-child(1) {
+    width: 25%;
+  }
